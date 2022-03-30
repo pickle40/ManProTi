@@ -104,7 +104,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <div class="login-header">
                 <div class="brand">
@@ -117,15 +117,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                 </div>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </div>
     </nav>
     <div class="countainer">
     <div class="wrapper">
         <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
+        <p>Silahkan masukan data login anda.</p>
         <form method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
@@ -140,7 +137,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
     </div>   
     </div> 
